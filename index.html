@@ -6,27 +6,50 @@
   <title>Mundo fit</title>
   <link rel="stylesheet" href="bootstrap.min.css">
   <link rel="stylesheet" href="main.css">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-  <header class="cabecalho">
+  <header id="cabecalho">
     <div class="container">
       <nav id="menu" class=" navbar navbar-expand-lg navbar-light">
         <h1 class="navbar-brand"> Mundo fit </h1>
-        <div class="collapse navbar-collapse   justify-content-end b-flex">
+        <!-- button hamburguer -->
+        <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbarNav" class="collapse navbar-collapse   justify-content-end b-flex">
           <ul class="navbar-nav ml-auto ">
-            <li class="navbar-item active">
-              <a  class="nav-link" href="#">Modalidades</a>
+            <li class="nav-item active">
+              <a  class="nav-link  " href="#">Treinos</a>
             </li>
-            <li class="navbar-item">
-              <a class="nav-link" href="#">planos</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contato</a>
             </li>
-            <li class="navbar-item">
+            <li class="nav-item">
               <a class="nav-link" href="#">sobre </a>
-          </ul>
-          
+            </ul>
+            <button id="btn-ativador" class="btn btn-danger" type="button">
+              <i class="fa-regular fa-envelope-open"></i> 
+            </button>        
         </div>
       </nav>
+      <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="Toast-mensagem" class="toast w-100" data-bs-autohide="false">
+          <header class="toast-header">
+              <strong>Importante uso de Cookies </strong>
+          </header>
+          <div class="toast-body">
+            Este site utiliza cookies para melhorar sua experiência de navegação,
+            personalizar conteúdo e anúncios, fornecer recursos de mídia social e analisar o tráfego do site.
+            Ao continuar navegando ou ao fechar este aviso, você concorda com o uso de cookies
+            <div class="mt-2 pt-2 border-top justify-content-end w-100">
+              <button data-bs-dismiss="toast" type="button" class="btn btn-danger button-config">
+                Descartar 
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </header>
   <div id="carousel-slide" class=" carousel slide" data-bs-ride="carousel">
@@ -56,144 +79,149 @@
       <button type="button" class="carousel-control-next" data-bs-target="#carousel-slide" data-bs-slide="next">
         <span class="carousel-control-next-icon"></span>
         <span class="visually-hidden">Next</span>
-    </div>
-    <!-- aqui o cards dos  -->
-    <div class="container my-5 ">
-      <div class="row d-flex flex-whap">
-        <div class="col-12 col-md-6 col-lg-4 mb-4">
-          <div class="card">
-            <img src="https://img.freepik.com/fotos-gratis/mulher-adulto-sinal-simbolo-familia_1296-381.jpg?t=st=1730461868~exp=1730465468~hmac=68991cda4c4a8ea5b1cda2137e7186d09f0a4c63ce0c50c0b502faf0339b6e7f&w=360" alt=" treino de Braço">
-            <div class="card-body">
-              <h5>Treino com halters </h1>
-              <h6 class="card-title"> Titulo do card </h6>
-              <h5 class="card-subtitle"> Subtitlo do card</h5>
-              <p class="card-text"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel totam nisi magnam dignissimos earum, tempore reprehenderit perspiciatis delectus, dolor distinctio rerum quia maxime quisquam recusandae iste blanditiis temporibus ut commodi.</p>
-              <a href="#" class="btn btn-primary"> Ler Mais</a>
+  </div>
+  <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+    <section id="treinos">
+      <div class="container my-5 ">
+        <div class="row d-flex flex-whap">
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card">
+              <img src="https://img.freepik.com/fotos-gratis/mulher-adulto-sinal-simbolo-familia_1296-381.jpg?t=st=1730461868~exp=1730465468~hmac=68991cda4c4a8ea5b1cda2137e7186d09f0a4c63ce0c50c0b502faf0339b6e7f&w=360" alt=" treino de Braço">
+              <div class="card-body">
+                <h5>Treino com halters </h5>
+                <h6 class="card-title"> Titulo do card </h6>
+                <h5 class="card-subtitle"> Subtitlo do card</h5>
+                <p class="card-text"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel totam nisi magnam dignissimos earum, tempore reprehenderit perspiciatis delectus, dolor distinctio rerum quia maxime quisquam recusandae iste blanditiis temporibus ut commodi.</p>
+                <a href="#" class="btn btn-primary"> Ler Mais</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4 mb-4">
-          <div class="card">
-            <img src="https://img.freepik.com/fotos-gratis/mulher-adulto-sinal-simbolo-familia_1296-381.jpg?t=st=1730461868~exp=1730465468~hmac=68991cda4c4a8ea5b1cda2137e7186d09f0a4c63ce0c50c0b502faf0339b6e7f&w=360" alt=" treino de Braço">
-            <div class="card-body">
-              <h5>Treino com halters </h1>
-              <h6 class="card-title"> Titulo do card </h6>
-              <h5 class="card-subtitle"> Subtitlo do card</h5>
-              <p class="card-text"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel totam nisi magnam dignissimos earum, tempore reprehenderit perspiciatis delectus, dolor distinctio rerum quia maxime quisquam recusandae iste blanditiis temporibus ut commodi.</p>
-              <a href="#" class="btn btn-primary"> Ler Mais</a>
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card">
+              <img src="https://img.freepik.com/fotos-gratis/mulher-adulto-sinal-simbolo-familia_1296-381.jpg?t=st=1730461868~exp=1730465468~hmac=68991cda4c4a8ea5b1cda2137e7186d09f0a4c63ce0c50c0b502faf0339b6e7f&w=360" alt=" treino de Braço">
+              <div class="card-body">
+                <h5>Treino com halters </h5>
+                <h6 class="card-title"> Titulo do card </h6>
+                <h5 class="card-subtitle"> Subtitlo do card</h5>
+                <p class="card-text"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel totam nisi magnam dignissimos earum, tempore reprehenderit perspiciatis delectus, dolor distinctio rerum quia maxime quisquam recusandae iste blanditiis temporibus ut commodi.</p>
+                <a href="#" class="btn btn-primary"> Ler Mais</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4 mb-4">
-          <div class="card">
-            <img src="https://img.freepik.com/fotos-gratis/mulher-adulto-sinal-simbolo-familia_1296-381.jpg?t=st=1730461868~exp=1730465468~hmac=68991cda4c4a8ea5b1cda2137e7186d09f0a4c63ce0c50c0b502faf0339b6e7f&w=360" alt=" treino de Braço">
-            <div class="card-body">
-              <h5>Treino com halters </h1>
-              <h6 class="card-title"> Titulo do card </h6>
-              <h5 class="card-subtitle"> Subtitlo do card</h5>
-              <p class="card-text"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel totam nisi magnam dignissimos earum, tempore reprehenderit perspiciatis delectus, dolor distinctio rerum quia maxime quisquam recusandae iste blanditiis temporibus ut commodi.</p>
-              <a href="#" class="btn btn-primary"> Ler Mais</a>
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card">
+              <img src="https://img.freepik.com/fotos-gratis/mulher-adulto-sinal-simbolo-familia_1296-381.jpg?t=st=1730461868~exp=1730465468~hmac=68991cda4c4a8ea5b1cda2137e7186d09f0a4c63ce0c50c0b502faf0339b6e7f&w=360" alt=" treino de Braço">
+              <div class="card-body">
+                <h5>Treino com halters </h5>
+                <h6 class="card-title"> Titulo do card </h6>
+                <h5 class="card-subtitle"> Subtitlo do card</h5>
+                <p class="card-text"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel totam nisi magnam dignissimos earum, tempore reprehenderit perspiciatis delectus, dolor distinctio rerum quia maxime quisquam recusandae iste blanditiis temporibus ut commodi.</p>
+                <a href="#" class="btn btn-primary"> Ler Mais</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4 mb-4">
-          <div class="card">
-            <img src="https://img.freepik.com/fotos-gratis/mulher-adulto-sinal-simbolo-familia_1296-381.jpg?t=st=1730461868~exp=1730465468~hmac=68991cda4c4a8ea5b1cda2137e7186d09f0a4c63ce0c50c0b502faf0339b6e7f&w=360" alt=" treino de Braço">
-            <div class="card-body">
-              <h5>Treino com halters </h1>
-              <h6 class="card-title"> Titulo do card </h6>
-              <h5 class="card-subtitle"> Subtitlo do card</h5>
-              <p class="card-text"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel totam nisi magnam dignissimos earum, tempore reprehenderit perspiciatis delectus, dolor distinctio rerum quia maxime quisquam recusandae iste blanditiis temporibus ut commodi.</p>
-              <a href="#" class="btn btn-primary "> Ler Mais</a>
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card">
+              <img src="https://img.freepik.com/fotos-gratis/mulher-adulto-sinal-simbolo-familia_1296-381.jpg?t=st=1730461868~exp=1730465468~hmac=68991cda4c4a8ea5b1cda2137e7186d09f0a4c63ce0c50c0b502faf0339b6e7f&w=360" alt=" treino de Braço">
+              <div class="card-body">
+                <h5>Treino com halters </h5>
+                <h6 class="card-title"> Titulo do card </h6>
+                <h5 class="card-subtitle"> Subtitlo do card</h5>
+                <p class="card-text"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel totam nisi magnam dignissimos earum, tempore reprehenderit perspiciatis delectus, dolor distinctio rerum quia maxime quisquam recusandae iste blanditiis temporibus ut commodi.</p>
+                <a href="#" class="btn btn-primary "> Ler Mais</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4 mb-4">
-          <div class="card">
-            <img src="https://img.freepik.com/fotos-gratis/mulher-adulto-sinal-simbolo-familia_1296-381.jpg?t=st=1730461868~exp=1730465468~hmac=68991cda4c4a8ea5b1cda2137e7186d09f0a4c63ce0c50c0b502faf0339b6e7f&w=360" alt=" treino de Braço">
-            <div class="card-body">
-              <h5>Treino com halters </h1>
-              <h6 class="card-title"> Titulo do card </h6>
-              <h5 class="card-subtitle"> Subtitlo do card</h5>
-              <p class="card-text"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel totam nisi magnam dignissimos earum, tempore reprehenderit perspiciatis delectus, dolor distinctio rerum quia maxime quisquam recusandae iste blanditiis temporibus ut commodi.</p>
-              <a href="#" class="btn btn-primary "> Ler Mais</a>
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card">
+              <img src="https://img.freepik.com/fotos-gratis/mulher-adulto-sinal-simbolo-familia_1296-381.jpg?t=st=1730461868~exp=1730465468~hmac=68991cda4c4a8ea5b1cda2137e7186d09f0a4c63ce0c50c0b502faf0339b6e7f&w=360" alt=" treino de Braço">
+              <div class="card-body">
+                <h5>Treino com halters </h5>
+                <h6 class="card-title"> Titulo do card </h6>
+                <h5 class="card-subtitle"> Subtitlo do card</h5>
+                <p class="card-text"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel totam nisi magnam dignissimos earum, tempore reprehenderit perspiciatis delectus, dolor distinctio rerum quia maxime quisquam recusandae iste blanditiis temporibus ut commodi.</p>
+                <a href="#" class="btn btn-primary "> Ler Mais</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4 mb-4">
-          <div class="card">
-            <img src="https://img.freepik.com/fotos-gratis/mulher-adulto-sinal-simbolo-familia_1296-381.jpg?t=st=1730461868~exp=1730465468~hmac=68991cda4c4a8ea5b1cda2137e7186d09f0a4c63ce0c50c0b502faf0339b6e7f&w=360" alt=" treino de Braço">
-            <div class="card-body">
-              <h5>Treino com halters </h1>
-              <h6 class="card-title"> Titulo do card </h6>
-              <h5 class="card-subtitle"> Subtitlo do card</h5>
-              <p class="card-text"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel totam nisi magnam dignissimos earum, tempore reprehenderit perspiciatis delectus, dolor distinctio rerum quia maxime quisquam recusandae iste blanditiis temporibus ut commodi.</p>
-              <a href="#" class="btn btn-primary "> Ler Mais</a>
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card">
+              <img src="https://img.freepik.com/fotos-gratis/mulher-adulto-sinal-simbolo-familia_1296-381.jpg?t=st=1730461868~exp=1730465468~hmac=68991cda4c4a8ea5b1cda2137e7186d09f0a4c63ce0c50c0b502faf0339b6e7f&w=360" alt=" treino de Braço">
+              <div class="card-body">
+                <h5>Treino com halters </h5>
+                <h6 class="card-title"> Titulo do card </h6>
+                <h5 class="card-subtitle"> Subtitlo do card</h5>
+                <p class="card-text"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel totam nisi magnam dignissimos earum, tempore reprehenderit perspiciatis delectus, dolor distinctio rerum quia maxime quisquam recusandae iste blanditiis temporibus ut commodi.</p>
+                <a href="#" class="btn btn-primary "> Ler Mais</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  <section id="form-backGround">
-    <div  id="Formulario-container" class="container ">
-      <div class="row justify-content-center">
-        <div class="col-12 col-md-12 col-lg-12 ">
-          <h1 class="text-center textoEdit">contato </h1>
-          <form>
-            <div class="form-group">
-              <label class="form-label " for="name"> Digite o seu: </label>
-              <input class="form-control" id="name" placeholder="Ex. julio Sontove B" type="text" required aria-riquired>
-            </div>          
-            <div class="form-group">
-              <label class="form-label" for="email"> Digite o seu Email valido:</label>
-              <input class="form-control" placeholder="Ex. julioSantove@gmail.com " id="email"  type="email" required>
-            </div>          
-            <div class="form-group">
-              <label class="form-label" for="email-Confirm"> Confirme o seu Email:</label>
-              <input class="form-control" id="email-Confirm" placeholder="Ex. julioSantove@gmail.com " type="email" required>
-            </div>          
-            <div class="form-group formNmatricula">
-              <label class="form-label" for="numero-matricula"> Numero de matricula</label>
-              <input class="form-control" id="numero-matricula" type="number" placeholder="Digite o N da matricula da academia" required aria-requirid>
-            </div>          
-            <button class="btn btn- btn-danger" type="button">
-              Enviar
-            </button>
-          </form>
-      </div>  
-    </div>
-  </section>
-  <footer>
-    <div class="contaner bodyFooter">
-      <div class="row">
-        <div class=" col-12 col-md-4 text-center">
-            <h5>Sobre Nós</h5>
-            <p>Informações sobre a empresa ou projeto.</p>
+    </section>
+    <section id="form-backGround">
+      <div  id="Formulario-container" class="container ">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-12 col-lg-12 ">
+            <h1 class="text-center textoEdit">contato </h1>
+            <form>
+              <div class="form-group">
+                <label class="form-label " for="name"> Digite o seu: </label>
+                <input class="form-control" id="name" placeholder="Ex. julio Sontove B" type="text" required aria-riquired>
+              </div>          
+              <div class="form-group">
+                <label class="form-label" for="email"> Digite o seu Email valido:</label>
+                <input class="form-control" placeholder="Ex. julioSantove@gmail.com " id="email"  type="email" required>
+              </div>          
+              <div class="form-group">
+                <label class="form-label" for="email-Confirm"> Confirme o seu Email:</label>
+                <input class="form-control" id="email-Confirm" placeholder="Ex. julioSantove@gmail.com " type="email" required>
+              </div>          
+              <div class="form-group formNmatricula">
+                <label class="form-label" for="numero-matricula"> Numero de matricula</label>
+                <input class="form-control" id="numero-matricula" type="number" placeholder="Digite o N da matricula da academia" required aria-requirid>
+              </div>          
+              <button class="btn btn- btn-danger" type="button">
+                Enviar
+              </button>
+            </form>
+        </div>  
+      </div>
+    </section>
+    <section id="sobre">
+      <footer>
+        <div class="container bodyFooter">
+          <div class="row">
+            <div class=" col-12 col-md-4 text-center">
+                <h5>Sobre Nós</h5>
+                <p>Informações sobre a empresa ou projeto.</p>
+            </div>
+            <div class=" col-12 col-md-4 text-center">
+                <h5>Navegadores</h5>
+                <ul class="styleLink list-unstyled">
+                    <li>
+                      <a href="#">Treinos</a>
+                    </li>
+                    <li>
+                      <a href="#">Contato</a>
+                    </li>
+                    <li>
+                      <a href="#">Sobre</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-4 text-center">
+                <h5>Contato</h5>
+                <p>Email: contato@exemplo.com</p>
+            </div>
         </div>
-        <div class=" col-12 col-md-4 text-center">
-            <h5>Navegadores</h5>
-            <ul class="list-unstyled">
-                <li>
-                  <a href="#" class="text-white">Modalidades</a>
-                </li>
-                <li>
-                  <a href="#" class="text-white">Planos</a>
-                </li>
-                <li>
-                  <a href="#" class="text-white">Sobre</a>
-                </li>
-            </ul>
+        <div class="text-center mt-4">
+            <p>&copy; 2024 Meu Site. Todos os direitos reservados.</p>
         </div>
-        <div class="col-12 col-md-4 text-center">
-            <h5>Contato</h5>
-            <p>Email: contato@exemplo.com</p>
-        </div>
-    </div>
-    <div class="text-center mt-4">
-        <p>&copy; 2024 Meu Site. Todos os direitos reservados.</p>
-    </div>
-    </div>
-  </footer>
+      </footer>
+    </section>
+  </div>
   <script src="bootstrap.bundle.min.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
